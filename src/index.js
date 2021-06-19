@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './theme';
-import CoolButton from './CoolButton';
+import TestComponent from './TestComponent';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       {/* <App /> */}
-      <CoolButton cool={true} />
+      <TestComponent />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
