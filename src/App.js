@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Header from "./Header";
+import Content from "./Content";
 
 function App() {
   return (
@@ -13,13 +14,13 @@ function App() {
         {/* Content */}
         <Grid item container>
           {/* Space left */}
-          <Grid xs={0} sm={2} />
+          <Grid xs={false} sm={2} />
           {/* Actual content */}
-          <Grid sm={8}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <Grid xs={12} sm={8}>
+            <Content />
           </Grid>
           {/* Space right */}
-          <Grid xs={0} sm={2} />
+          <Grid xs={false} sm={2} />
         </Grid>
       </Grid>
     </div>
