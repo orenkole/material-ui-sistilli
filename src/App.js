@@ -1,12 +1,14 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-      <Grid cointainer direction="column">
+      <Grid container direction="column">
         {/* Header */}
         <Grid item>
+          <Header />
         </Grid>
         {/* Content */}
         <Grid item container>
