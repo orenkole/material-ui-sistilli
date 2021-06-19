@@ -6,6 +6,11 @@ const theme = createMuiTheme({
   palette: {
     primary: green,
   },
+  typography: {
+    h1: {
+      fontSize: "1rem",
+    }
+  }
 });
 
 export default theme;

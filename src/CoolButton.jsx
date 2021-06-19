@@ -23,6 +23,7 @@ function CoolButton(props) {
   return (
     <Typography
       color="primary"
+      variant="h1"
     >Hello</Typography>
   )
 }
