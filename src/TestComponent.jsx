@@ -14,15 +14,15 @@ import { useTheme } from '@material-ui/core/styles';
 // });
 
 const useStyles = makeStyles(theme => ({
-  gutterBottom: {
-    marginBottom: ".5rem",
+  root: {
+    borderRadius: "50px",
   }
 }))
 
 function TestComponent(props) {
-
+  const classes = useStyles();
   return (
-    <Paper>
+    <Paper classes={{ root: classes.root }}>
       <Typography
         variant="h1"
       >Hello</Typography>
