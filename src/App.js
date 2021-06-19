@@ -5,8 +5,12 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
   helloThereStyle: {
     fontStyle: 'oblique',
-    color: red,
-  }
+    color: 'red',
+  },
+  buttonStyles: {
+    color: 'green',
+    border: 0,
+  },
 })
 
 function App() {
