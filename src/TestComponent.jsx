@@ -1,31 +1,22 @@
 import {
-  makeStyles,
+  Grid,
   Paper,
   Typography,
 } from '@material-ui/core'
 import React from 'react'
-import { useTheme } from '@material-ui/core/styles';
 
-// const useStyles = makeStyles({
-//   buttonStyles: props => ({
-//     color: props.cool ? "blue" : "red",
-//     backgroundColor: props.cool ? "orange" : "yellow",
-//   })
-// });
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    borderRadius: "50px",
-  }
-}))
-
-function TestComponent(props) {
-  const classes = useStyles();
+function TestComponent() {
   return (
-    <Paper classes={{ root: classes.root }}>
-      <Typography
-        variant="h1"
-      >Hello</Typography>
+    <Paper style={{ height: "100vh" }}>
+      <Grid cointaner direction="column">
+        <Typography variant="h1">This is my App</Typography>
+        <Button variant="contained" color="primary">
+          This is a button
+        </Button>
+        <Button variant="contained" color="primary">
+          This is anothe button
+        </Button>
+      </Grid>
     </Paper>
   )
 }
