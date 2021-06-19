@@ -20,10 +20,9 @@ const useStyles = makeStyles(theme => ({
 }))
 
 function CoolButton(props) {
-  const classes = useStyles();
   return (
     <Typography
-      classes={{ gutterBottom: classes.gutterBottom }}
+      color="primary"
     >Hello</Typography>
   )
 }
