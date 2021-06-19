@@ -17,13 +17,14 @@ import {
 function TestComponent() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const theme = createMuiTheme({
+  const darkTheme = createMuiTheme({
     palette: {
-      type: darkMode ? "dark" : "light"
+      type: "dark"
     }
   })
+
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={darkMode && darkTheme} >
       <Paper style={{ height: "100vh" }}>
         <Grid cointaner direction="column">
           <Typography variant="h1">This is my App</Typography>
