@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import React from 'react'
 import classNames from "classnames";
+import { useThemes } from '@material-ui/core/styles';
 
 // const useStyles = makeStyles({
 //   buttonStyles: props => ({
@@ -19,7 +20,10 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function CoolButton(props) {
+
+
+function TestComponent(props) {
+
   return (
     <Typography
       color="primary"
@@ -28,4 +32,4 @@ function CoolButton(props) {
   )
 }
 
-export default CoolButton
+export default TestComponent
