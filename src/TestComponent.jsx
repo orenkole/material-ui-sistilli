@@ -14,7 +14,7 @@ function TestComponent() {
           This is a button
         </Button>
         <Button variant="contained" color="primary">
-          This is anothe button
+          This is another button
         </Button>
       </Grid>
     </Paper>
