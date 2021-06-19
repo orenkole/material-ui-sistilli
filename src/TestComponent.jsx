@@ -1,11 +1,10 @@
 import {
-  Button,
   makeStyles,
+  Paper,
   Typography,
 } from '@material-ui/core'
 import React from 'react'
-import classNames from "classnames";
-import { useThemes } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 // const useStyles = makeStyles({
 //   buttonStyles: props => ({
@@ -20,15 +19,14 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-
-
 function TestComponent(props) {
 
   return (
-    <Typography
-      color="primary"
-      variant="h1"
-    >Hello</Typography>
+    <Paper>
+      <Typography
+        variant="h1"
+      >Hello</Typography>
+    </Paper>
   )
 }
 
