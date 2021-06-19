@@ -5,9 +5,10 @@ import {
 import React from 'react'
 
 const useStyles = makeStyles({
-  buttonStyles: {
-    color: props => (props.cool ? "blue" : "red")
-  }
+  buttonStyles: props => ({
+    color: props.cool ? "blue" : "red",
+    backgroundColor: props.cool ? "orange" : "yellow",
+  })
 });
 
 function CoolButton(props) {
