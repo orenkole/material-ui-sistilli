@@ -1,6 +1,7 @@
 import {
   Button,
   makeStyles,
+  Typography,
 } from '@material-ui/core'
 import React from 'react'
 import classNames from "classnames";
@@ -13,23 +14,17 @@ import classNames from "classnames";
 // });
 
 const useStyles = makeStyles(theme => ({
-  buttonStyles: {
-    color: "red",
-    [theme.breakpoints.up("sm")]: {
-      color: "blue",
-    }
-  },
-  textBackground: {
-    backgroundColor: "red",
+  gutterBottom: {
+    marginBottom: ".5rem",
   }
 }))
 
 function CoolButton(props) {
   const classes = useStyles();
   return (
-    <Button className={classNames(classes.buttonStyles, classes.textBackground)}>
-      The button
-    </Button>
+    <Typography
+      classes={{ gutterBottom: classes.gutterBottom }}
+    >Hello</Typography>
   )
 }
 
